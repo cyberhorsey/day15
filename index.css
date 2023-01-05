@@ -1,0 +1,183 @@
+#body {
+    background-color:#FBA1AD;
+    transition: background-color 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#audio-container{
+  display: flex;
+  justify-content: right;
+}
+
+#audio-container audio {
+  width: 300px;
+  height: 32px;
+  
+}
+
+  
+
+  #header{
+    background-color: black;
+    text-align: center;
+    font-size: 42px;
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    
+  }
+
+  
+#nft-header {
+  font-size: 24px;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.max-width {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* .img-cell {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  max-height: 100%;
+  object-fit: contain;
+} */
+
+.img-cell {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  object-fit: contain; /* Resize the images to fit within the img-cell element while preserving their aspect ratio */
+  overflow: hidden;
+}
+
+.nft-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nft-row h3 {
+  display: flex;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 8px;
+}
+
+.nft-row .item-balance {
+  margin: 8px;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.nft-col {
+  width: 23%;
+  margin: 7px 8px;
+  background-color: #FECAD1;
+  border-radius: 6px;
+  
+}
+
+.image-container {
+  margin: 10px 0px 0px 0px;
+ 
+}
+
+.nft-bottom-container{
+  margin: 0px;
+  
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #FECAD1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.input-default {
+  padding: 17px 20px;
+  min-width: 350px;
+  background: #FFF3F5;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border: 1px solid #2c2c2c;
+  color: rgb(0, 0, 0);
+  height: 24px;
+}
+
+.input-default:focus {
+  border: 1px solid #F87C8D;
+}
+
+
+.button-default {
+  padding: 3px 30px;
+  background: #F87C8D;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px 0px 0px 0px;
+  font-weight: 1000;
+  border-color: #F87C8D;
+  font-size: 13px;
+  font-stretch: wider;
+  
+
+}
+
+#spinner-container{
+  margin: 40px;
+}
+
+.spinner {
+  display: none; /* Initially hidden */
+  justify-content: center;
+  margin: 0 auto;
+  border: 20px solid #FFF3F5; 
+  border-top: 20px solid #F87C8D; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 600px) {
+  .nft-row {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+
+  .nft-col {
+      width: 70%;
+  }
+  .input-default {
+      min-width: 70px;
+  }
+}

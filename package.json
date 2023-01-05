@@ -1,0 +1,22 @@
+{
+  "name": "day13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -p esmify > bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@moralisweb3/common-evm-utils": "^2.10.3",
+    "axios": "^1.2.1",
+    "browserify": "^17.0.0",
+    "ethers": "^5.7.2",
+    "moralis": "^2.10.3"
+  },
+  "devDependencies": {
+    "esmify": "^2.1.1"
+  }
+}
